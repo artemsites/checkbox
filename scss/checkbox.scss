@@ -4,7 +4,16 @@ $checkbox-border-color: #000;
 $checkbox-border-width: 1px;
 
 .checkbox {
-  position: relative;
+  &__label {
+    display: flex;
+
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+
+    position: relative;
+  }
   &__text {
     width: auto;
     font-family: "Open Sans";
@@ -23,6 +32,7 @@ $checkbox-border-width: 1px;
     box-sizing: border-box;
 
     position: absolute;
+    left: 1px;
     &::before {
       content: "";
       display: block;
@@ -59,13 +69,5 @@ $checkbox-border-width: 1px;
       transition: 100ms;
       transition-delay: 100ms;
     }
-  }
-  &__label {
-    display: flex;
-
-    width: auto;
-    justify-content: flex-start;
-    align-items: center;
-    cursor: pointer;
   }
 }
