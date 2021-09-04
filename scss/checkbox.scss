@@ -2,8 +2,11 @@ $checkbox-v-color: white;
 $checkbox-bg-color: #5081bc;
 $checkbox-border-color: #000;
 $checkbox-border-width: 1px;
-
+$checkbox-decor-width: 20px;
 .checkbox {
+  width: $checkbox-decor-width;
+
+  margin: 0;
   &__label {
     display: flex;
 
@@ -25,8 +28,8 @@ $checkbox-border-width: 1px;
     margin-left: 5px;
   }
   &__decor {
-    width: 20px;
-    height: 20px;
+    width: $checkbox-decor-width;
+    height: $checkbox-decor-width;
     background: $checkbox-bg-color;
     border: $checkbox-border-width solid $checkbox-border-color;
     box-sizing: border-box;
