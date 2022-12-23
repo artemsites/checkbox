@@ -1,10 +1,11 @@
-$checkbox-v-color: white;
-$checkbox-bg-color: #5081bc;
+$checkbox-v-color: #747475;
+$checkbox-bg-color: #fff;
 $checkbox-border-color: #000;
 $checkbox-border-width: 1px;
 $checkbox-decor-width: 20px;
 .checkbox {
   width: $checkbox-decor-width;
+  height: $checkbox-decor-width;
 
   margin: 0;
   &__label {
@@ -22,10 +23,8 @@ $checkbox-decor-width: 20px;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    color: #000;
 
-    margin-left: 5px;
+    margin-left: 10px;
   }
   &__decor {
     width: $checkbox-decor-width;
@@ -35,7 +34,7 @@ $checkbox-decor-width: 20px;
     box-sizing: border-box;
 
     position: absolute;
-    left: 1px;
+    left: 0;
     &::before {
       content: "";
       display: block;
